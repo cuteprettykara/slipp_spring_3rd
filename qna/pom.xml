@@ -26,8 +26,15 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-		
-		<!--  Logging -->
+
+		<!-- Form Validation using Annotations -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.4.3.Final</version>
+		</dependency>
+
+		<!-- Logging -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
@@ -46,7 +53,7 @@
 			<artifactId>spring-test</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
-		
+
 
 		<!-- DB -->
 		<dependency>

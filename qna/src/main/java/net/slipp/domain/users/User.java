@@ -1,9 +1,22 @@
 package net.slipp.domain.users;
 
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class User {
+	@Size(min=4, max=12)
 	private String userId;
+	
+	@Size(min=4, max=12)
 	private String password;
+	
+	@NotEmpty
+	@Size(min=2, max=12)
 	private String name;
+	
+	@Email
 	private String email;
 	
 	public User() {
