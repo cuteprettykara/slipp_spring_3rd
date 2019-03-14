@@ -34,8 +34,8 @@ public class UserDaoTest {
 		userDao.create(user);
 		
 		User actual = userDao.findById("sanjigi");
-		log.debug("User  : {}", user);
-		log.debug("actual: {}", actual);
+//		log.debug("User  : {}", user);
+//		log.debug("actual: {}", actual);
 		assertThat(actual, is(user));
 	}
 
